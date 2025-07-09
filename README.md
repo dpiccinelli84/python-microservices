@@ -39,6 +39,26 @@ python app.py
 # Service will run on http://127.0.0.1:5003
 ```
 
+## Dockerizing the User Service
+
+A `Dockerfile` is provided for the `user-service`.
+
+To build the Docker image:
+
+```bash
+# Navigate to the user-service directory
+cd user-service
+
+# Build the image
+docker build -t user-service:latest .
+```
+
+To run the container:
+
+```bash
+docker run -p 5001:5001 user-service:latest
+```
+
 ## How to Test
 
 The `user-service` includes a basic test suite.
